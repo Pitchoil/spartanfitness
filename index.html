@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    
+    <!-- Mobile App Capable Tags -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#000000">
+
+    <title>SpartanFitness</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- SPLASH SCREEN -->
+    <section id="splash-screen">
+        <button id="enter-btn" onclick="enterArena()">ENTER THE ARENA</button>
+        <div class="logo-container">
+            <img src="spartan_logo.png" alt="Spartan Fitness Logo" id="splash-image">
+        </div>
+        <p class="dev-credit">Developed by Pawi</p>
+        <button onclick="emergencyReset()" style="margin-top:20px; background:none; border:none; color:#333; font-size:10px;">Reset Data</button>
+    </section>
+
+    <!-- MAIN APP -->
+    <div id="app-container" style="display:none;">
+        <header>
+            <div id="top-left-menu" class="user-select" onclick="toggleUserMenu()" style="opacity:0.5; pointer-events:none;">
+                <i class="fas fa-user"></i> <span id="current-user-name">Warrior</span> <i id="trainer-caret" class="fas fa-caret-down" style="display:none"></i>
+            </div>
+            <div class="logo-text">SPARTAN</div>
+        </header>
+
+        <div id="user-menu" class="hidden-menu">
+            <h3>Client Roster</h3>
+            <div id="user-list-display"></div>
+            <button class="add-user-btn" onclick="createNewUser()">+ Add New Client</button>
+        </div>
+
+        <!-- REST TIMER OVERLAY -->
+        <div id="rest-overlay" class="rest-overlay" style="display:none;">
+            <div class="timer-content">
+                <span id="timer-label">REST</span>
+                <span id="timer-countdown">00:00</span>
+                <button onclick="stopTimer()" class="stop-btn"><i class="fas fa-times"></i></button>
+            </div>
+        </div>
+
+        <!-- DASHBOARD -->
+        <section id="dashboard" class="tab-content active">
+            <div class="welcome-banner">
+                <div style="display:flex; justify-content:space-between; align-items:flex-start;">
+                    <div>
+                        <h2 id="day-display" style="margin:0;">Loading...</h2>
+                        <p id="focus-display" style="color:#e6c288; font-style:italic; margin:5px 0;">...</p>
+                    </div>
+                </div>
+                <div class="chart-container">
+                    <small style="color:#ddd; display:block; margin-bottom:5px;">Weekly Volume</small>
+                    <div id="weekly-chart" class="bar-chart"></div>
+                </div>
+            </div>
+
+            <div class="stats-row">
+                <div class="stat-card">
+                    <i class="fas fa-utensils"></i> <span id="cal-display">0</span> 
+                    <div class="stat-label">Daily Calories</div>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-dumbbell"></i> <span id="workout-count">0</span> 
+                    <div class="stat-label">Sessions</div>
+                </div>
+            </div>
+
+            <h3 style="border-bottom:1px solid #333; padding-bottom:10px;">Today's Mission</h3>
+            <div id="todays-routine-list"></div>
+        </section>
+
+        <!-- LIBRARY -->
+        <section id="library" class="tab-content">
+            <input type="text" id="search-ex" class="spartan-input" placeholder="Search Exercises..." onkeyup="filterLibrary()">
+            <div id="library-list"></div>
+        </section>
+
+        <!-- NUTRITION -->
+        <section id="nutrition" class="tab-content">
+            <div style="display:flex; gap:10px; margin-bottom:15px;">
+                <button onclick="showNutriTab('track')" class="save-btn">Daily Log</button>
+                <button onclick="showNutriTab('ideas')" class="save-btn">Meal Ideas</button>
+            </div>
+
+            <div id="nutri-track-view">
+                <div class="input-card">
+                    <h4 style="color:#E6C288; margin-top:0;">Log Meal</h4>
+                    <label class="input-label">Meal Type</label>
+                    <select id="meal-type" class="spartan-input">
+                        <option value="Breakfast">Breakfast</option>
+                        <option value="Lunch">Lunch</option>
+                        <option value="Dinner">Dinner</option>
+                        <option value="Snack">Snack</option>
+                    </select>
+                    
+                    <label class="input-label">Food Item</label>
+                    <div style="display:flex; gap:10px; margin-bottom:15px;">
+                        <input type="text" id="food-name" class="spartan-input" placeholder="e.g. 2 Eggs" style="flex:1">
+                        <button onclick="autoFillMacros()" class="gold-btn">Auto Calc</button>
+                    </div>
+
+                    <div class="macro-grid">
+                        <div><label class="input-label">Protein</label><input type="number" id="m-prot" class="spartan-input"></div>
+                        <div><label class="input-label">Carbs</label><input type="number" id="m-carb" class="spartan-input"></div>
+                        <div><label class="input-label">Fat</label><input type="number" id="m-fat" class="spartan-input"></div>
+                    </div>
+                    <label class="input-label">Total Calories</label>
+                    <input type="number" id="m-cal" class="spartan-input">
+                    <button onclick="logMeal()" class="save-btn" style="background:#c0392b; margin-top:15px;">Save to Daily Log</button>
+                </div>
+                <h3>Today's Totals</h3>
+                <div id="macro-display"></div>
+                <div id="meal-log-list" style="margin-top:15px;"></div>
+            </div>
+
+            <div id="nutri-ideas-view" style="display:none;">
+                <div style="display:flex; gap:5px; overflow-x:auto; margin-bottom:10px; padding-bottom:5px;">
+                    <button class="filter-chip" onclick="filterMeals('Breakfast')">Breakfast</button>
+                    <button class="filter-chip" onclick="filterMeals('Lunch')">Lunch</button>
+                    <button class="filter-chip" onclick="filterMeals('Dinner')">Dinner</button>
+                    <button class="filter-chip" onclick="filterMeals('Snack')">Snack</button>
+                </div>
+                <div id="meal-prep-container"></div>
+            </div>
+        </section>
+
+        <!-- PROFILE -->
+        <section id="profile" class="tab-content">
+            <h2 style="color:#E6C288">Profile Settings</h2>
+            <label class="input-label">Name</label><input type="text" id="p-name" class="spartan-input">
+            <label class="input-label">Gender</label>
+            <select id="p-gender" class="spartan-input">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+            <label class="input-label">Goal</label>
+            <select id="p-goal" class="spartan-input">
+                <option value="shred">Shred / Lose Weight</option>
+                <option value="tone">Tone / Firm Up</option>
+                <option value="bulk">Bulk / Strength</option>
+            </select>
+            <div style="margin-top:20px; background:#1a1a1a; padding:15px; border-radius:10px; border:1px solid #333;">
+                <label style="display:flex; align-items:center; justify-content:space-between;">
+                    <span style="font-weight:bold; color:#E6C288;">Enable Trainer Mode</span>
+                    <input type="checkbox" id="p-trainer-mode" onchange="toggleTrainerMode()" style="transform:scale(1.5);">
+                </label>
+            </div>
+            <button onclick="saveProfile()" class="save-btn" style="margin-top:20px;">Save Profile</button>
+
+            <!-- DANGER ZONE -->
+            <div class="danger-zone">
+                <h3 style="color:#e74c3c; margin-bottom:10px;">Data Management</h3>
+                <button onclick="resetCurrentUserData()" class="danger-btn"><i class="fas fa-undo"></i> Reset Current User Data</button>
+                <button onclick="deleteCurrentUser()" class="danger-btn"><i class="fas fa-user-times"></i> Delete This User</button>
+                <button onclick="emergencyReset()" class="danger-btn full-reset"><i class="fas fa-bomb"></i> Factory Reset App</button>
+            </div>
+        </section>
+
+        <!-- TRACKER MODAL -->
+        <div id="tracker-modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h2 id="m-title">Exercise</h2>
+                <div class="instruction-box">
+                    <p id="m-desc">...</p>
+                </div>
+
+                <div class="unit-toggle">
+                    <div id="unit-kg" class="unit-opt active" onclick="setUnit('kg')">KG</div>
+                    <div id="unit-lbs" class="unit-opt" onclick="setUnit('lbs')">LBS</div>
+                </div>
+
+                <div id="m-ai-msg" class="ai-box"></div>
+                <div id="sets-history" class="history-container"></div>
+                
+                <div class="log-row">
+                    <label id="weight-label">Weight (KG)</label>
+                    <input type="number" id="log-w" class="spartan-input">
+                </div>
+                <div class="log-row">
+                    <label>Reps</label>
+                    <input type="number" id="log-r" class="spartan-input">
+                </div>
+                <button onclick="saveSet()" class="log-btn">LOG SET</button>
+                <button onclick="startRestTimer(60, 'REST')" class="timer-btn"><i class="fas fa-stopwatch"></i> START REST (60s)</button>
+            </div>
+        </div>
+
+        <nav>
+            <button onclick="nav('dashboard')" class="active"><i class="fas fa-home"></i></button>
+            <button onclick="nav('library')"><i class="fas fa-dumbbell"></i></button>
+            <button onclick="nav('nutrition')"><i class="fas fa-apple-alt"></i></button>
+            <button onclick="nav('profile')"><i class="fas fa-user-circle"></i></button>
+        </nav>
+    </div>
+
+    <script src="app.js"></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('sw.js');
+      }
+    </script>
+</body>
+</html>

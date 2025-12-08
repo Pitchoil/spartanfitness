@@ -1,0 +1,19 @@
+{
+  "name": "SpartanFitness",
+  "short_name": "SpartanFit",
+  "start_url": "/index.html",
+  "display": "fullscreen",
+  "display_override": ["window-controls-overlay", "minimal-ui"],
+  "background_color": "#000000",
+  "theme_color": "#c0392b",
+  "orientation": "portrait",
+  "scope": "/",
+  "description": "Offline Fitness Tracker",
+  "icons": [
+    {
+      "src": "spartan_logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
