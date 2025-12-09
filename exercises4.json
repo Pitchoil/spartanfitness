@@ -1,0 +1,74 @@
+"Legs – Quads (Major)": [
+      {"name":"Back Squat (High Bar)","primary":"Quadriceps","secondary":["Glutes","Hamstrings"],"sets":"4-5","reps":"6-12","rest_sets":"180-240s","rest_ex":"4min","tempo":"3010","instructions":"1. Bar on traps, feet shoulder-width. 2. Chest up, core braced. 3. Squat until hips below knees. 4. Drive through heels to stand. 5. Repeat.","tips_tricks":"Depth = growth. Knees track over toes."},
+      {"name":"Front Squat","primary":"Quadriceps","secondary":["Core","Upper Back"],"sets":"4","reps":"8-12","rest_sets":"150s","rest_ex":"3min","tempo":"3010","instructions":"1. Bar on front delts, elbows high. 2. Squat deep. 3. Drive up. 4. Repeat.","tips_tricks":"Forces upright torso. Great for quads and core."},
+      {"name":"Bulgarian Split Squat","primary":"Quadriceps","secondary":["Glutes"],"sets":"3-4","reps":"10-12/leg","rest_sets":"90s","rest_ex":"2min","tempo":"3010","instructions":"1. Rear foot elevated. 2. Lower until front thigh parallel. 3. Drive up. 4. Repeat per leg.","tips_tricks":"Unilateral fix. Dumbbells or barbell."},
+      {"name":"Leg Press (45°)","primary":"Quadriceps","secondary":["Glutes","Hamstrings"],"sets":"4","reps":"10-15","rest_sets":"90s","rest_ex":"2min","tempo":"3011","instructions":"1. Feet mid-platform, shoulder-width. 2. Lower until knees 90°. 3. Press explosively. 4. Repeat.","tips_tricks":"Feet high = more glutes/hamstrings."},
+      {"name":"Hack Squat","primary":"Quadriceps","secondary":["Glutes"],"sets":"3-4","reps":"10-12","rest_sets":"90s","rest_ex":"2min","tempo":"3010","instructions":"1. Shoulders under pads, feet low. 2. Squat deep. 3. Drive up. 4. Repeat.","tips_tricks":"Quad dominant. Toes slightly out."},
+      {"name":"Goblet Squat","primary":"Quadriceps","secondary":["Core"],"sets":"3","reps":"12-15","rest_sets":"60s","rest_ex":"90s","tempo":"3010","instructions":"1. Hold dumbbell/kettlebell at chest. 2. Squat deep. 3. Stand tall. 4. Repeat.","tips_tricks":"Beginner-friendly upright squat."},
+      {"name":"Walking Lunge","primary":"Quadriceps","secondary":["Glutes"],"sets":"3","reps":"12-16 steps","rest_sets":"90s","rest_ex":"2min","tempo":"2010","instructions":"1. Step forward into lunge. 2. Push off front leg. 3. Alternate legs while walking. 4. Repeat.","tips_tricks":"Dumbbells or barbell for load."},
+      {"name":"Step-Up","primary":"Quadriceps","secondary":["Glutes"],"sets":"3","reps":"10-12/leg","rest_sets":"60s","rest_ex":"90s","tempo":"2010","instructions":"1. Step onto box knee-high. 2. Drive through heel. 3. Step down controlled. 4. Repeat per leg.","tips_tricks":"Lead leg does the work."}
+    ],
+
+    "Legs – Quads (Minor – VMO & Isolation)": [
+      {"name":"Sissy Squat","primary":"Vastus Medialis (VMO)","secondary":["Rectus Femoris"],"sets":"3","reps":"12-15","rest_sets":"60s","rest_ex":"90s","tempo":"3110","instructions":"1. Hold rack, heels elevated. 2. Lean back, knees forward. 3. Squat down. 4. Rise. 5. Repeat.","tips_tricks":"Knee health + teardrop quad."},
+      {"name":"Leg Extension","primary":"Quadriceps","secondary":["Rectus Femoris"],"sets":"3-4","reps":"12-20","rest_sets":"45s","rest_ex":"90s","tempo":"3021","instructions":"1. Sit, pads on shins. 2. Extend legs fully. 3. Squeeze quads. 4. Lower slowly. 5. Repeat.","tips_tricks":"Isolation. Pause at top."},
+      {"name":"Wall Sit","primary":"Quadriceps","sets":"3","reps":"30-90s","rest_sets":"60s","rest_ex":"90s","tempo":"N/A","instructions":"1. Back against wall, thighs parallel. 2. Hold isometric. 3. Stand when time up.","tips_tricks":"Endurance builder."}
+    ],
+
+    "Legs – Hamstrings (Major)": [
+      {"name":"Romanian Deadlift (RDL)","primary":"Hamstrings","secondary":["Glutes","Erector Spinae"],"sets":"4","reps":"8-12","rest_sets":"120s","rest_ex":"3min","tempo":"3011","instructions":"1. Bar close to legs, soft knees. 2. Hinge hips back. 3. Lower until stretch in hamstrings. 4. Drive hips forward. 5. Repeat.","tips_tricks":"Feel the stretch. Not a squat."},
+      {"name":"Stiff-Leg Deadlift","primary":"Hamstrings","secondary":["Glutes"],"sets":"3","reps":"10-12","rest_sets":"90s","rest_ex":"2min","tempo":"4010","instructions":"1. Straight legs (soft knee). 2. Lower bar to mid-shin. 3. Pull back up. 4. Repeat.","tips_tricks":"Max hamstring stretch."},
+      {"name":"Lying Leg Curl","primary":"Hamstrings","secondary":["Gastrocnemius"],"sets":"3-4","reps":"10-15","rest_sets":"60s","rest_ex":"90s","tempo":"3021","instructions":"1. Prone, pads on heels. 2. Curl heels to glutes. 3. Lower slowly. 4. Repeat.","tips_tricks":"Point toes for more hamstring."},
+      {"name":"Seated Leg Curl","primary":"Hamstrings","secondary":["Popliteus"],"sets":"3","reps":"12-15","rest_sets":"60s","rest_ex":"90s","tempo":"3011","instructions":"1. Sit, pads on lower calves. 2. Curl down. 3. Squeeze. 4. Extend slowly. 5. Repeat.","tips_tricks":"Different angle than lying curl."},
+      {"name":"Good Morning","primary":"Hamstrings","secondary":["Erector Spinae"],"sets":"3","reps":"8-12","rest_sets":"90s","rest_ex":"2min","tempo":"3010","instructions":"1. Bar on traps. 2. Hinge forward to 90°. 3. Return upright. 4. Repeat.","tips_tricks":"Light weight. Flat back."},
+      {"name":"Nordic Hamstring Curl","primary":"Hamstrings","secondary":["Glutes"],"sets":"3","reps":"6-10","rest_sets":"90s","rest_ex":"2min","tempo":"4110","instructions":"1. Knees padded, heels anchored. 2. Lower torso slowly. 3. Push back up. 4. Repeat.","tips_tricks":"Eccentric strength. Injury prevention."}
+    ],
+
+    "Legs – Hamstrings (Minor)": [
+      {"name":"Glute-Ham Raise (GHR)","primary":"Hamstrings","secondary":["Glutes"],"sets":"3","reps":"8-12","rest_sets":"90s","rest_ex":"2min","tempo":"3011","instructions":"1. On GHR machine. 2. Lower and curl back up. 3. Repeat.","tips_tricks":"Best hamstring builder."},
+      {"name":"Single-Leg RDL","primary":"Hamstrings","secondary":["Glutes"],"sets":"3","reps":"10-12/leg","rest_sets":"60s","rest_ex":"90s","tempo":"3010","instructions":"1. Stand on one leg. 2. Hinge and lower DB. 3. Return. 4. Switch.","tips_tricks":"Balance + unilateral strength."}
+    ],
+
+    "Calves (Major)": [
+      {"name":"Standing Calf Raise (Machine)","primary":"Gastrocnemius","secondary":["Soleus"],"sets":"4-5","reps":"12-20","rest_sets":"45s","rest_ex":"90s","tempo":"2011","instructions":"1. Shoulders under pads. 2. Raise heels high. 3. Lower below platform. 4. Repeat.","tips_tricks":"Full stretch + pause at top."},
+      {"name":"Seated Calf Raise","primary":"Soleus","secondary":["Gastrocnemius"],"sets":"4","reps":"15-25","rest_sets":"45s","rest_ex":"90s","tempo":"3011","instructions":"1. Knees bent, pads on thighs. 2. Raise heels. 3. Lower deep. 4. Repeat.","tips_tricks":"Bent knee = soleus focus."},
+      {"name":"Donkey Calf Raise","primary":"Gastrocnemius","secondary":["Soleus"],"sets":"3","reps":"15-20","rest_sets":"45s","rest_ex":"90s","tempo":"2011","instructions":"1. Bend over, partner on back or machine. 2. Raise heels. 3. Lower deep. 4. Repeat.","tips_tricks":"Old-school stretch."},
+      {"name":"Leg Press Calf Raise","primary":"Gastrocnemius","secondary":["Soleus"],"sets":"3","reps":"15-25","rest_sets":"45s","rest_ex":"90s","tempo":"2011","instructions":"1. Feet low on sled. 2. Press through toes. 3. Lower deep. 4. Repeat.","tips_tricks":"Heavy loading possible."}
+    ],
+
+    "Glutes (Major)": [
+      {"name":"Barbell Hip Thrust","primary":"Gluteus Maximus","secondary":["Hamstrings","Quads"],"sets":"4","reps":"8-15","rest_sets":"90-120s","rest_ex":"2min","tempo":"2011","instructions":"1. Upper back on bench, bar on hips. 2. Drive through heels, thrust hips up. 3. Full extension, squeeze glutes 2s. 4. Lower. 5. Repeat.","tips_tricks":"Best glute builder. Pad the bar."},
+      {"name":"Glute Bridge (Barbell)","primary":"Gluteus Maximus","secondary":["Hamstrings"],"sets":"3-4","reps":"12-20","rest_sets":"60s","rest_ex":"90s","tempo":"2011","instructions":"1. Lie on floor, bar on hips. 2. Lift hips high. 3. Squeeze glutes. 4. Lower. 5. Repeat.","tips_tricks":"Floor version of hip thrust."},
+      {"name":"Single-Leg Glute Bridge","primary":"Gluteus Maximus","secondary":["Hamstrings"],"sets":"3","reps":"12-15/leg","rest_sets":"45s","rest_ex":"60s","tempo":"2011","instructions":"1. One foot flat, other leg up. 2. Drive through heel. 3. Squeeze. 4. Lower. 5. Switch.","tips_tricks":"Unilateral activation."},
+      {"name":"Cable Kickback","primary":"Gluteus Maximus","secondary":["Hamstrings"],"sets":"3","reps":"12-15/leg","rest_sets":"45s","rest_ex":"60s","tempo":"2011","instructions":"1. Low cable on ankle. 2. Kick leg back. 3. Squeeze glute. 4. Return. 5. Repeat.","tips_tricks":"Mind-muscle connection."}
+    ],
+
+    "Glutes (Minor – Medius/Minimus)": [
+      {"name":"Side-Lying Hip Abduction","primary":"Gluteus Medius","secondary":["Tensor Fasciae Latae"],"sets":"3","reps":"15-25/leg","rest_sets":"30s","rest_ex":"60s","tempo":"2011","instructions":"1. Lie on side. 2. Lift top leg up. 3. Lower slowly. 4. Repeat.","tips_tricks":"Hip stability. Add band."},
+      {"name":"Clamshell","primary":"Gluteus Medius","secondary":["Gluteus Minimus"],"sets":"3","reps":"20/leg","rest_sets":"30s","rest_ex":"60s","tempo":"1011","instructions":"1. Side-lying, knees bent. 2. Open top knee. 3. Close. 4. Repeat.","tips_tricks":"Activation exercise."},
+      {"name":"Fire Hydrant","primary":"Gluteus Medius","secondary":["Gluteus Maximus"],"sets":"3","reps":"15/leg","rest_sets":"30s","rest_ex":"60s","tempo":"2011","instructions":"1. On all fours. 2. Lift bent leg out to side. 3. Lower. 4. Repeat.","tips_tricks":"Side glute burner."},
+      {"name":"Monster Walk (Band)","primary":"Gluteus Medius","secondary":["Gluteus Maximus"],"sets":"3","reps":"20 steps each way","rest_sets":"60s","rest_ex":"90s","tempo":"N/A","instructions":"1. Band above knees. 2. Squat slightly. 3. Step side to side. 4. Repeat.","tips_tricks":"Warm-up or finisher."}
+    ],
+
+    "Core – Abs (Major)": [
+      {"name":"Hanging Leg Raise","primary":"Rectus Abdominis (Lower)","secondary":["Iliopsoas"],"sets":"3-4","reps":"10-15","rest_sets":"60s","rest_ex":"90s","tempo":"3110","instructions":"1. Hang from bar. 2. Raise straight legs to 90°. 3. Lower slowly. 4. Repeat.","tips_tricks":"No swing. Knees bent = easier."},
+      {"name":"Cable Crunch","primary":"Rectus Abdominis","secondary":["Obliques"],"sets":"3","reps":"15-20","rest_sets":"45s","rest_ex":"60s","tempo":"2011","instructions":"1. Kneel facing cable, rope behind head. 2. Crunch down. 3. Squeeze abs. 4. Return slowly. 5. Repeat.","tips_tricks":"Weighted ab work."},
+      {"name":"Ab Wheel Rollout","primary":"Rectus Abdominis","secondary":["Transverse Abdominis"],"sets":"3","reps":"10-20","rest_sets":"60s","rest_ex":"90s","tempo":"3110","instructions":"1. Kneel, grip wheel. 2. Roll forward until stretch. 3. Pull back with abs. 4. Repeat.","tips_tricks":"Full core anti-extension."},
+      {"name":"Plank","primary":"Rectus Abdominis","secondary":["Transverse Abdominis"],"sets":"3","reps":"30-120s","rest_sets":"60s","rest_ex":"90s","tempo":"N/A","instructions":"1. Forearms and toes. 2. Body straight. 3. Hold tight core. 4. Breathe.","tips_tricks":"Neutral spine. Side plank variation."},
+      {"name":"Dragon Flag","primary":"Rectus Abdominis","secondary":["Obliques"],"sets":"3","reps":"6-12","rest_sets":"90s","rest_ex":"2min","tempo":"4110","instructions":"1. Lie on bench, grip behind head. 2. Lift body straight. 3. Lower slowly. 4. Repeat.","tips_tricks":"Advanced Bruce Lee move."}
+    ],
+
+    "Core – Abs (Minor – Lower & Anti-Extension)": [
+      {"name":"Reverse Crunch","primary":"Rectus Abdominis (Lower)","secondary":["Obliques"],"sets":"3","reps":"15-25","rest_sets":"45s","rest_ex":"60s","tempo":"2011","instructions":"1. Lie flat, knees bent. 2. Curl hips off ground. 3. Lower slowly. 4. Repeat.","tips_tricks":"Pelvic tilt focus."},
+      {"name":"Dead Bug","primary":"Transverse Abdominis","secondary":["Rectus Abdominis"],"sets":"3","reps":"12/side","rest_sets":"30s","rest_ex":"60s","tempo":"2110","instructions":"1. Lie on back, arms/legs up. 2. Extend opposite arm/leg. 3. Return. 4. Switch.","tips_tricks":"Core stability. No back arch."},
+      {"name":"Hollow Body Hold","primary":"Rectus Abdominis","secondary":["Transverse Abdominis"],"sets":"3","reps":"20-60s","rest_sets":"45s","rest_ex":"60s","tempo":"N/A","instructions":"1. Lie back, arms/legs extended. 2. Lift shoulders and legs off ground. 3. Hold hollow position.","tips_tricks":"Gymnastics foundation."}
+    ],
+
+    "Core – Obliques & Rotational": [
+      {"name":"Russian Twist","primary":"Obliques","secondary":["Rectus Abdominis"],"sets":"3","reps":"20-30/side","rest_sets":"45s","rest_ex":"60s","tempo":"1010","instructions":"1. Sit, knees bent, lean back. 2. Twist torso side to side. 3. Hold weight optional. 4. Repeat.","tips_tricks":"Add medicine ball or plate."},
+      {"name":"Woodchopper (Cable)","primary":"Obliques","secondary":["Rectus Abdominis"],"sets":"3","reps":"12-15/side","rest_sets":"45s","rest_ex":"60s","tempo":"2011","instructions":"1. High cable. 2. Pull across body to low opposite side. 3. Rotate torso. 4. Return slowly.","tips_tricks":"Rotational power."},
+      {"name":"Side Plank","primary":"Obliques","secondary":["Transverse Abdominis"],"sets":"3","reps":"30-60s/side","rest_sets":"30s","rest_ex":"60s","tempo":"N/A","instructions":"1. Side forearm plank. 2. Hips up. 3. Hold straight line. 4. Switch sides.","tips_tricks":"Hip dips for extra burn."},
+      {"name":"Pallof Press","primary":"Obliques","secondary":["Transverse Abdominis"],"sets":"3","reps":"10-15/side","rest_sets":"30s","rest_ex":"60s","tempo":"2010","instructions":"1. Cable at chest, side-on. 2. Press out, resist rotation. 3. Hold 2s. 4. Return. 5. Switch.","tips_tricks":"Anti-rotation core strength."}
+    ]
+  }
+}
