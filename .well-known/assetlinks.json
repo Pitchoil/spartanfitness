@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.pawi.spartanfitness",
+      "sha256_cert_fingerprints": [
+        "C7:E1:06:AF:E1:84:1C:55:B2:F8:98:6F:F1:44:EA:E5:05:EC:9D:76:DF:7F:36:61:46:79:FE:D0:42:3F:15:9C"
+      ]
+    }
+  }
+]
