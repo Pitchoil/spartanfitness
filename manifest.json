@@ -1,7 +1,7 @@
 {
   "name": "SpartanFitness",
   "short_name": "SpartanFit",
-  "start_url": "/index.html",
+  "start_url": "./index.html",
   "display": "fullscreen",
   "display_override": ["window-controls-overlay", "minimal-ui"],
   "background_color": "#000000",
